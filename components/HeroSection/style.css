@@ -1,0 +1,78 @@
+/* style.css */
+
+/* Wrapper to position the background and text */
+.highlighted-text-wrapper {
+    display: inline-block; /* Allows for relative positioning of the background */
+    position: relative; /* Needed for positioning the background */
+  }
+  
+  .highlighted-text-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Rotate background */
+    background-color: black; /* Dark orange color */
+    padding: 0em 00em; /* Adds padding around the text */
+    border-radius: 0.05em; /* Optional: rounded corners */
+    z-index: -1; /* Background should be behind the text */
+    white-space: nowrap; /* Prevents wrapping of the background */
+    width: 100%; /* Make background fit text width */
+    height: 100%; /* Make background fit text height */
+  }
+  
+  .highlighted-text{
+    color: black; /* Text color */
+    font-style: normal; /* Ensure text is not italicized */
+    font-weight: normal; /* Text weight */
+    position: relative; /* Ensure text is on top of the background */
+    z-index: 1; /* Ensure text is above the background */
+    transform: rotate(-3deg);
+  }
+  /* style.css */
+
+/* style.css */
+
+.hero-section {
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center; /* Aligns text and icon vertically */
+    gap: 8px; /* Space between text and arrow */
+  }
+  
+  .arrow-icon {
+    display: inline-block;
+    transform: rotate(-45deg); /* Default rotation */
+    transition: transform 0.3s ease; /* Smooth transition */
+    white-space: pre-wrap;
+  }
+  
+  button:hover .arrow-icon {
+    transform: rotate(0deg); /* Rotate to 90 degrees on hover */
+  }
+  
+  .text-sm {
+    font-size: 0.875rem; /* Smaller text size for small screens */
+  }
+  
+  .text-base {
+    font-size: 1rem; /* Base text size for medium screens */
+  }
+  
+  .text-lg {
+    font-size: 1.125rem; /* Larger text size for large screens */
+  }
+  .highlight {
+    display: inline-block;
+    background-color: #f58327; 
+    transform: rotate(3deg); 
+    padding: -2px -2px;
+    margin-right: -2px;
+    vertical-align: center;
+    position:relative;
+  }
