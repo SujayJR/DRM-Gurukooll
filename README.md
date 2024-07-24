@@ -1,4 +1,4 @@
-# InventX
+# DRM Gurukooll
 
  Start the project on the local server
 
