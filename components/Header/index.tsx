@@ -18,10 +18,10 @@ export default function Header() {
     return (
       <>
         <header className="sticky top-0 z-[9999] bg-white">
-          <div className="w-screen h-14 bg-black shadow flex justify-center items-center font-semibold lg:px-16 px-4">
-            <nav className="flex items-center w-full mr-12 lg:mx-16">
+          <div className="w-screen h-18 bg-black shadow flex justify-center items-center font-semibold lg:px-16 px-4">
+            <nav className="flex items-center w-full mr-12 lg:mx-0">
                 <div className="flex justify-between items-center w-full">
-                    <div className="h-full w-48 text-white" onClick={() => router.push("/")}>
+                    <div className="h-full w-40 text-white" onClick={() => router.push("/")}>
                       DRM Gurukooll
                     </div>
                     <div className={`h-8 w-8 lg:hidden flex cursor-pointer ${isOpen ? "hidden" : ""}`} onClick={handleHamClick}>
